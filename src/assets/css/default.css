@@ -1,1 +1,10 @@
 /*_____----- C S S -----______*/
+
+@font-face {
+    font-family: 'tipo1';
+    src: url(../font/TheStudent.ttf);
+}
+
+body {
+    font-family: 'tipo1';
+}
