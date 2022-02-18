@@ -1,0 +1,35 @@
+ /* ====================== BS NAVBAR CUSTOMISATION ====================== */
+ /* ===================================================================== */
+
+ 
+ .bg-light {                                    /* opacité navbar */
+    --bs-bg-opacity: 0;
+}
+.navbar-toggler:focus {                       /* "burger" au click" */
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.navbar-toggler {                             /* opacité div button */
+    border: 0px solid transparent;
+}
+
+.navbar-light .navbar-toggler-icon {          /* logo "burger" */
+    background-image: url(#); 
+}
+
+.navbar-light .navbar-brand {                 /* couleur titre site */
+    color: rgb(4, 0, 255);
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {   /* couleurs menu */
+    color: rgba(242, 61, 100, 0.8);
+}
+
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .show>.nav-link {   /* couleurs menu actif */
+    color: rgb(255, 37, 255);
+}
