@@ -20,7 +20,13 @@
 }
 
 .navbar-light .navbar-brand {                 /* couleur titre site */
-    color: rgb(4, 0, 255);
+    color: #FFCA42
+    ;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+    text-align: right;
+    padding-right: 20px;
 }
 
 .navbar-light .navbar-nav .nav-link,
