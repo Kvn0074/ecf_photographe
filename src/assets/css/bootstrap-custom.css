@@ -1,8 +1,6 @@
  /* ====================== BS NAVBAR CUSTOMISATION ====================== */
  /* ===================================================================== */
-:root {
-    
-}
+
  
  .bg-light {                                    /* opacité navbar et background */
     --bs-bg-opacity: 0.8;
@@ -25,6 +23,11 @@
 .navbar-light .navbar-brand {                 /* couleur titre site */
     color: #111111;
     ;
+}
+
+.navbar-logo {
+height: 30px;
+width: auto;
 }
 
 .navbar-collapse .navbar-nav .nav-item .nav-link {
