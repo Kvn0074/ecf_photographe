@@ -3,9 +3,10 @@
 
  
  .bg-light {                                    /* opacité navbar et background */
-    --bs-bg-opacity: 0.8;
-    background-color: rgba(var(--bs-gray-300),var(--bs-bg-opacity))!important;
+    --bs-bg-opacity: 0.3;
+    
 }
+
 .navbar-toggler:focus {                       /* "burger" au click" */
     text-decoration: none;
     outline: 0;
