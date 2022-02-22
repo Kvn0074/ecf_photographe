@@ -1,7 +1,13 @@
 /*=================================================
 =============| G L O B A L |=======================
 =================================================*/
+:root {
+    --light     : #dee2e6; /* idem --bs-gray-300 */
+    --dark      : #212529; /* idem --bs-gray-900 */
+    --kontrast  : #20c997; /* idem --bs-teal */
+    --kontrast2 : #6f42c1; /* idem --bs-purple */
 
+}
 @font-face {
     font-family: 'tipo1';
     src: url(../font/TheStudent.ttf);
@@ -9,11 +15,38 @@
 
 body {
     font-family: 'tipo1';
-    background-color: #dee2e6;
-    color: #242424;
+    background-color: var(--light);
+    color: var(--dark);
 }
 
 /*=================================================
-=============| INDEX HEADER |=======================
+=============| INDEX HEADER |======================
 =================================================*/
+
+/*=================================================
+=============| FOOTER |============================
+=================================================*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.footer-social .footer-social-logo {
+    height: 35px;
+    margin: 20px;
+    opacity: 0.85; /* pour s'approcher de la couleur --light */
+}
+
+.footer-title {
+    letter-spacing: 8px;
+    margin-bottom: 0;
+}
+
+.footer-tel {
+    color: var(--kontrast2);
+    font-weight: bold;
+}
 
