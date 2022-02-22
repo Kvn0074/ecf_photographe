@@ -22,6 +22,40 @@ body {
 /*=================================================
 =============| INDEX HEADER |======================
 =================================================*/
+header {
+    position: relative;  
+}
+
+header .header-container {
+    padding: 0;
+}
+header .header-pic {
+    width: 100%;
+    height: auto;
+}
+
+header .header-title {
+    color: var(--kontrast);
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    font-size: 2em;
+    letter-spacing: 8px;
+    width: 340px;
+    height: 60px;
+    text-align: center;
+    /* idem --bs-purple */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px ;   
+    margin-left: -170px;
+} 
+
+
+header .header-title 
+.header-sub-title {
+    font-size: 0.6em;
+    letter-spacing: 16px;
+}
 
 /*=================================================
 =============| FOOTER |============================
@@ -29,7 +63,9 @@ body {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     background-color: var(--dark);
     color: var(--light);
 }
@@ -43,10 +79,13 @@ footer {
 .footer-title {
     letter-spacing: 8px;
     margin-bottom: 0;
+    color: var(--kontrast);
+    border-top: 1px var(--light) solid;
+    padding-top: 15px;
 }
 
 .footer-tel {
-    color: var(--kontrast2);
+    color: var(--kontrast);
     font-weight: bold;
 }
 
