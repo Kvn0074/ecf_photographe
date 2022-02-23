@@ -2,10 +2,11 @@
  /* ===================================================================== */
 
  
- .bg-light {                                    /* opacité navbar et background */
-    --bs-bg-opacity: 0.3;
-    
-}
+
+
+.navbar {
+    background-color: #dee2e6;
+  }
 
 .navbar-toggler:focus {                       /* "burger" au click" */
     text-decoration: none;

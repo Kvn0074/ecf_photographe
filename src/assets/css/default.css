@@ -4,10 +4,9 @@
 :root {
     --light      : #dee2e6; /* idem --bs-gray-300 */
     --dark       : #212529; /* idem --bs-gray-900 */
-    --light-dark : #6c757d; /* idem --bs-gray-600 */
+    --light-dark : #ced4da; /* idem --bs-gray-400 */
     --kontrast   : #20c997; /* idem --bs-teal */
-    --kontrast2  : #6f42c1; /* idem --bs-purple */
-
+  
 }
 
 
@@ -75,7 +74,36 @@ header .header-title
     height: 35px;
     margin: 20px;
     opacity: 0.85;
+    cursor: pointer;
 }
+
+/*=================================================
+=============| CONTACT US |========================
+=================================================*/
+
+.contact {
+    background: var(--light-dark);
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-text {
+    letter-spacing: 2px;
+    padding-top: 20px;
+    margin-bottom: 35px;
+}
+
+.contact-btn {
+    color: var(--light);
+    background: var(--dark);
+    padding: 10px;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
 /*=================================================
 =============| FOOTER |============================
 =================================================*/
@@ -97,6 +125,7 @@ footer p {
     height: 35px;
     margin: 20px;
     opacity: 0.85; /* pour s'approcher de la couleur --light */
+    cursor: pointer;
 }
 
 .footer-title {
