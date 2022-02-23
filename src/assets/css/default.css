@@ -83,9 +83,11 @@ header .header-title
 
 .contact {
     background: var(--light-dark);
-    height: 200px;
+    height: 250px;
     text-align: center;
     padding: 10px;
+    padding-top: 25px; 
+    padding-bottom: 25px;
 }
 
 .contact-text {
