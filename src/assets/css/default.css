@@ -39,7 +39,14 @@ a {
 }
 .header-index-pic {
     margin-left: -50%;
+    height: 850px;
     
+}
+
+@media screen and (min-width: 500px) {
+    .header-index-pic {
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 710px) {
@@ -58,7 +65,6 @@ a {
     width: 360px;
     height: 40px;
     text-align: center;
-    /* idem --bs-purple */
     position: absolute;
     top: 50%;
     left: 50%;
