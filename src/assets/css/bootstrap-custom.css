@@ -54,3 +54,22 @@ width: auto;
     margin-right: 30px;
 }
 
+.navbar-pic{
+    height: 40px;
+    opacity: 0.8;
+    margin: 0;
+    margin-left: 30px;
+    padding: 8px;
+    padding-right: 10px;
+}
+
+.nav-social{
+    text-align: center;
+   
+}
+
+.social-name {
+    margin-right: 30px;
+    padding-right: 10px;
+}
+
