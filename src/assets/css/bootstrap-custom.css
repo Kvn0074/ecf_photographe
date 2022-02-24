@@ -65,6 +65,10 @@ width: auto;
 
 .nav-social{
     text-align: center;
+   
+}
+
+.social-name {
     margin-right: 30px;
     padding-right: 10px;
 }
