@@ -4,9 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: gallerie
+- type: directory
+  path: src/gallerie
   label: Gallerie
+  create: all
   match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
