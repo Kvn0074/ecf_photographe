@@ -24,19 +24,33 @@ a {
 /*=================================================
 =============| INDEX HEADER |======================
 =================================================*/
-header {
+.header-index {
     position: relative;  
 }
 
-header .header-container {
+.header-index-container {
     padding: 0;
-}
-header .header-pic {
     width: 100%;
-    height: auto;
+    overflow: hidden;
+    height: 100vh;
+    background-image: url(../pics/girl-playing-flou.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.header-index-pic {
+    margin-left: -50%;
+    
 }
 
-header .header-title {
+@media screen and (min-width: 710px) {
+    .header-index-pic {
+        margin-left: 0; 
+    }
+  }
+ 
+
+
+.header-index-title {
     color: var(--kontrast);
     text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
     font-size: 1.5em;
@@ -53,17 +67,89 @@ header .header-title {
 } 
 
 
-header .header-title 
-.header-sub-title {
+.header-index-sub-title {
     font-size: 0.6em;
     letter-spacing: 16px;
 }
 
 /*=================================================
+=============| PRICES HEADER |=====================
+=================================================*/
+
+.prices-title-container {
+    padding: 15px;
+   
+}
+
+.prices-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.prices-text {
+    margin-bottom: 0;
+}
+
+/*=================================================
+=============| PRICES CARDS |=====================
+=================================================*/
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards .card-body {
+    background: var(--light-dark);
+    width: 300px;
+    max-width: 300px;
+    padding: 0;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.cards .card-body
+.card-description {
+    padding: 10px;
+    height: 150px;   
+}
+
+.cards .card-pic-div .card-pic {
+    width: 100%;
+    opacity: 0.75;
+}
+
+.cards .card-body 
+.card-price-div {
+    text-align: right;
+    height: 40px;
+    margin: 10px;
+    margin-top: 0;
+}
+
+.cards .card-body 
+.card-price-div 
+.card-price {
+    background: var(--kontrast);
+    color: var(--light);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+
+
+/*=================================================
 =============| INDEX PRESENTATION |================
 =================================================*/
 
-.presentation-container {
+.presentation-container{
     padding: 15px;
     text-align: center;
 }
@@ -103,6 +189,7 @@ header .header-title
 .contact-btn {
     color: var(--light);
     background: var(--dark);
+    text-align: center;
     padding: 10px;
     width: 160px;
     margin-left: auto;
