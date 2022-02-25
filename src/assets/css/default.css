@@ -185,6 +185,7 @@ a {
 
 .for-ratio-img {
     width: 45%;
+    height: auto;
 }
 
 .gallery-container .photo {
