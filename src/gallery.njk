@@ -8,7 +8,7 @@ pageTitle: Gallery
 
 <div class="gallery-container">
 {% for photo in collections.photos %}
-    <img src="{{photo.data.the_photo}}" class="photo {{photo.data.photo_categorie}}" alt="">
+    <div class="for-ratio-img"><img src="{{photo.data.the_photo}}" class="photo {{photo.data.photo_categorie}}" alt=""></div>
 {% endfor %}
 </div>
 

@@ -14,7 +14,7 @@ body {
     font-family: 'Montserrat Alternates', sans-serif;
     background-color: var(--light);
     color: var(--dark);
-    min-width: 360px;
+    min-width: 374px;
 }
 
 a {
@@ -183,10 +183,12 @@ a {
     justify-content: space-around;
 }
 
+.for-ratio-img {
+    width: 45%;
+}
+
 .gallery-container .photo {
-    width: 160px;
-    height: auto;
-    margin-bottom: 15px;
+    width: 100%;
     margin: 10px;
     border-radius: 5px;
 }
