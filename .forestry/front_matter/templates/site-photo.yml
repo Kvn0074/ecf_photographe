@@ -1,4 +1,27 @@
 ---
 label: site photo
 hide_body: true
-fields: []
+fields:
+- name: photo_categorie
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - mariage
+    - grossesse
+    - bebe
+    - famille
+    - bapteme
+    - couple
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: photo categorie
+- name: the_photo
+  type: file
+  config:
+    maxSize: 64
+  label: the photo
