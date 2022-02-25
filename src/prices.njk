@@ -32,20 +32,18 @@ pageTitle: Prices
 <section class="cards">
 
 
-    <!--========= S O L O ===========-->
+   {% for info in collections.cards %}
 
         <div class="card-body">
             <div class=card-pic-div>
-                <img src="../assets/pics/solo.png" class="card-pic" alt="bonhome seul">
+                <img src="{{info.data.card_picture}}" class="card-pic" alt="bonhome seul">
             </div>
             <div class="card-description">
-                <h2 class="card-title">Juste moi</h2>
-                <p class="card-text">Juste vous, moi, mon objectif et mon regard,
-                    ou vous voulez, quand vous voulez.
-                </p>
+                <h2 class="card-title">{{info.data.card_title}}</h2>
+                <p class="card-text">{{info.data.card_description}}</p>
             </div>
             <div class="card-price-div">
-                <span class="card-price">130 €</span>
+                <span class="card-price">{{info.data.card_price}}</span>
             </div>
 
             <a href="{{'/contform/' | url}}" alt="vers formulaire de contact">
@@ -53,7 +51,9 @@ pageTitle: Prices
             </a>
         </div>
 
-    <!--========= D U O ===========-->
+    {% endfor %}
+
+    <!-- 
 
         <div class="card-body">
             <div class=card-pic-div>
@@ -75,7 +75,7 @@ pageTitle: Prices
         </div>
 
 
-    <!--========= F A M I L L E ===========-->
+    
 
         <div class="card-body">
             <div class=card-pic-div>
@@ -99,7 +99,7 @@ pageTitle: Prices
 
 
 
-    <!--========= B E B E ===========-->
+    
 
         <div class="card-body">
             <div class=card-pic-div>
@@ -120,7 +120,7 @@ pageTitle: Prices
             </a>
         </div>
 
-    <!--========= E N C E I N T E ===========-->
+   
 
         <div class="card-body">
             <div class=card-pic-div>
@@ -141,7 +141,7 @@ pageTitle: Prices
             </a>
         </div>
 
-    <!--========= E V E N T ===========-->
+   
 
         <div class="card-body">
             <div class=card-pic-div>
@@ -162,6 +162,7 @@ pageTitle: Prices
             </a>
         </div>
        
+       -->
 
 
 </section>

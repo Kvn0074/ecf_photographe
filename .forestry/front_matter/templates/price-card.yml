@@ -14,7 +14,7 @@ fields:
     required: false
   label: card title
   description: le nom de la prestation
-- name: card-description
+- name: card_description
   type: textarea
   default: ''
   config:
