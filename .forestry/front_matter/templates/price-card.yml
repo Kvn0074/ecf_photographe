@@ -30,3 +30,5 @@ fields:
     required: false
   label: card price
   description: 'le prix au format : 100 € <br>Possibilité d''indiquer : sur demande'
+pages:
+- PriceCard/card-1.md
