@@ -2,7 +2,14 @@
 layout: layout.njk
 pageTitle: Gallery
 ---
-
+<br><br><br><br><br><br>
 <h2>Gallery</h2>
+<br><br><br>
+
+<div class="gallery-container">
+{% for photo in collections.photos %}
+    <img src="{{photo.data.the_photo}}" class="photo {{photo.data.photo_categorie}}" alt="">
+{% endfor %}
+</div>
 
 {% include "contact-us.njk" %}
