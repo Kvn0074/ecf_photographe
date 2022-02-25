@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: PriceCard
+  path: src/priceCard
   label: PriceCard
   create: all
   match: "**/*"
