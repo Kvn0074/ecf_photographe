@@ -27,6 +27,7 @@ fields:
     maxSize: 64
   label: the photo
 pages:
+- src/photos/beatrix.md
 - src/photos/bebe-1.md
 - src/photos/bebe-2.md
 - src/photos/bg-solo.md
