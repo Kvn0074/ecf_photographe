@@ -27,6 +27,7 @@ fields:
   label: the photo
 pages:
 - src/photos/bebe-1.md
+- src/photos/bebe-2.md
 - src/photos/couple-1.md
 - src/photos/couple-2.md
 - src/photos/famille-1.md
