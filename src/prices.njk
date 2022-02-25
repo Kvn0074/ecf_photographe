@@ -32,18 +32,18 @@ pageTitle: Prices
 <section class="cards">
 
 
-   {% for info in collections.cards %}
+   {% for card in collections.cards %}
 
         <div class="card-body">
             <div class=card-pic-div>
-                <img src="{{info.data.card_picture}}" class="card-pic" alt="bonhome seul">
+                <img src="{{card.data.card_picture}}" class="card-pic" alt="bonhome seul">
             </div>
             <div class="card-description">
-                <h2 class="card-title">{{info.data.card_title}}</h2>
-                <p class="card-text">{{info.data.card_description}}</p>
+                <h2 class="card-title">{{card.data.card_title}}</h2>
+                <p class="card-text">{{card.data.card_description}}</p>
             </div>
             <div class="card-price-div">
-                <span class="card-price">{{info.data.card_price}}</span>
+                <span class="card-price">{{card.data.card_price}}</span>
             </div>
 
             <a href="{{'/contform/' | url}}" alt="vers formulaire de contact">
