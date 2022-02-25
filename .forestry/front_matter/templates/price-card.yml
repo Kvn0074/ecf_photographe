@@ -8,6 +8,12 @@ fields:
     maxSize: 64
   label: card picture
   description: image de la carte
+- name: descritpion_image
+  type: text
+  config:
+    required: false
+  label: descritpion image
+  description: description simple et courte de l'image
 - name: card_title
   type: text
   config:
@@ -22,7 +28,7 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: card-description
+  label: card description
   description: description courte de la prestation 80char max
 - name: card_price
   type: text
@@ -30,5 +36,3 @@ fields:
     required: false
   label: card price
   description: 'le prix au format : 100 € <br>Possibilité d''indiquer : sur demande'
-pages:
-- PriceCard/card-1.md
