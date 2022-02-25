@@ -5,10 +5,19 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: PriceCard
+  label: PriceCard
+  create: all
+  match: "**/*"
+  templates:
+  - price-card
+- type: directory
   path: src/photos
   label: Photos
   create: all
   match: "**/*"
+  templates:
+  - site-photo
 upload_dir: src/uploads
 public_path: "/uploads"
 front_matter_path: ''
