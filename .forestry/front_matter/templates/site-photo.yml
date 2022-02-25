@@ -26,5 +26,6 @@ fields:
     maxSize: 64
   label: the photo
 pages:
+- src/photos/bebe-1.md
 - src/photos/couple-1.md
 - src/photos/grossese-1.md
