@@ -28,25 +28,9 @@ pageTitle: Gallery
 <!--=======| FILTRE |=======-->
 <!--========================-->
 
-<section class="filter">
+<section class="filter-top">
 
-    <div class="dropdown filters-dropdown">
-
-        <button class="btn btn-secondary dropdown-toggle filter-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        Appliquez un filtre
-        </button>
-
-        <ul class="dropdown-menu filters-tab" aria-labelledby="dropdownMenuButton1">
-            <li><div class="dropdown-item filter">Mariage</div></li>
-            <li><div class="dropdown-item filter">Grossesse</div></li>
-            <li><div class="dropdown-item filter">Bébé</div></li>
-            <li><div class="dropdown-item filter">Famille</div></li>
-            <li><div class="dropdown-item filter">Evenements</div></li>
-            <li><div class="dropdown-item filter">Couple</div></li>
-        </ul>
-
-    </div>
-
+    {% include "filter.njk" %}
 
 </section>
 
@@ -57,9 +41,15 @@ pageTitle: Gallery
 
     <div class="gallery-container">
     {% for photo in collections.photos %}
-        <div class="for-ratio-img"><img src="{{photo.data.the_photo}}" class="photo {{photo.data.photo_categorie}}" alt=""></div>
+        <div class="div-photo {{photo.data.photo_categorie}}"><img src="{{photo.data.the_photo}}" class="photo {{photo.data.photo_categorie}}" alt=""></div>
     {% endfor %}
     </div>
+
+</section>
+
+<section class="filter-bottom">
+
+    {% include "filter.njk" %}
 
 </section>
 

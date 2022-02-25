@@ -102,6 +102,13 @@ width: auto;
      color: var(--kontrast);
  }
 
+ #restaure {
+     background: var(--dark);
+     color: var(--kontrast);
+     border: 1px solid var(--kontrast);
+     border-radius: 15px;
+ }
+
  .dropdown-menu.show {
     width: 80%;
     display: flex;
@@ -109,5 +116,5 @@ width: auto;
     justify-content: space-around;
     background-color: var(--light-dark);
     border: none;
-    opacity: 0.8;
+    opacity: 1;
  }
