@@ -1,0 +1,120 @@
+ /* ===================================================================== */ 
+ /* ====================== BS NAVBAR CUSTOMISATION ====================== */
+ /* ===================================================================== */
+ :root {
+    --light      : #dee2e6; /* idem --bs-gray-300 */
+    --dark       : #212529; /* idem --bs-gray-900 */
+    --light-dark : #ced4da; /* idem --bs-gray-400 */
+    --kontrast   : #20c997; /* idem --bs-teal */
+  
+}
+ 
+
+
+.navbar {
+    background-color: var(--light);
+  }
+
+.navbar-toggler:focus {                       /* "burger" au click" */
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.navbar-toggler {                             /* opacité div button */
+    border: 0px solid transparent;
+}
+
+.navbar-light .navbar-toggler-icon {          /* logo "burger" */
+    background-image: url(../pics/thinBurger.png); 
+}
+
+
+.navbar-logo {   /* logo navbar */
+height: 30px;
+width: auto;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {   /* couleurs menu */
+    color: var(--dark);
+}
+
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .show>.nav-link {   /* couleurs menu actif */
+    color: rgb(82, 81, 95);
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link { /* positionnement nav items */
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.navbar-pic{
+    height: 40px;
+    opacity: 0.8;
+    margin: 0;
+    margin-left: 30px;
+    padding: 8px;
+    padding-right: 10px;
+}
+
+.nav-social{
+    text-align: center;
+   
+}
+
+.social-name {
+    margin-right: 30px;
+    padding-right: 10px;
+}
+
+ /* ===================================================================== */ 
+ /* ====================== BS DROPDOWN CUSTOMISATION ==================== */
+ /* ===================================================================== */
+
+ .filters-dropdown {
+     text-align: center;
+     margin-bottom: 25px;
+ }
+
+ .filter-button {
+     background: var(--dark);
+     color: var(--light);
+     width: 80%;
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+
+ .dropdown-toggle::after {
+     display: none;
+ }
+
+ .btn-secondary:hover {
+     background-color: var(--dark);
+     color: var(--kontrast);
+ }
+
+ #restaure {
+     background: var(--dark);
+     color: var(--kontrast);
+     border: 1px solid var(--kontrast);
+     border-radius: 15px;
+ }
+
+ .dropdown-menu.show {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--light-dark);
+    border: none;
+    opacity: 1;
+ }

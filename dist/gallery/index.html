@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-custom.css">
+    <link rel="stylesheet" href="/assets/css/default.css">
+    <title>CCantin | Gallery</title>
+</head>
+<body>
+
+<!--========================-->
+<!--========| NAVABAR |=====-->
+<!--========================-->
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/index.html">
+      <img class="navbar-logo" src="../assets/pics/charle-logo.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav ">
+        <li class="nav-item nav-social">
+          <img class="navbar-pic" src="../assets/pics/fb-blk.png" alt="logo facebook"><span class="social-name">Facebook</span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/gallery/">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/prices/">Prices</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="/contform/">Contact</a>
+        </li>
+        <li class="nav-item nav-social">
+          <img class="navbar-pic" src="../assets/pics/insta-blk.png" alt="logo instagram"><span class="social-name">Instagram</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--========================-->
+<!--=======| HEADER |=======-->
+<!--========================-->
+
+<header class="header-prices">
+    <div class="container-fluid prices-title-container">
+        <div class="row prices-row">
+            <div class="col-md-6 prices-header-title">
+                <h2 class="prices-title">Mon porte-folio, l'endroit de votre révalation. vous êtes magnifique.</h2>
+            </div>
+            <div class="col-md-6 prices-texts">
+                <p class="prices-text"> chaque pression sur le declencheur de mon appareil vous revele au monde emprunt 
+                    d'une beautée et d'une pureté que vous ne soupçonniez pas. Vous êtes unique, magnifique et parfait, 
+                    et c'est mon role de vous le montrer. 
+                    <p>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--========================-->
+<!--=======| FILTRE |=======-->
+<!--========================-->
+
+<section class="filter-top">
+
+    <div class="dropdown filters-dropdown">
+
+    <button class="btn btn-secondary dropdown-toggle filter-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Appliquez un filtre
+    </button>
+
+    <ul class="dropdown-menu filters-tab" aria-labelledby="dropdownMenuButton1">
+        <li><div class="dropdown-item filter" onclick="applyfilter('mariage')">Mariage</div></li>
+        <li><div class="dropdown-item filter" onclick="applyfilter('grossesse')">Grossesse</div></li>
+        <li><div class="dropdown-item filter" onclick="applyfilter('bebe')">Bébé</div></li>
+        <li><div class="dropdown-item filter" onclick="applyfilter('famille')">Famille</div></li>
+        <li><div class="dropdown-item filter" onclick="applyfilter('evenement')">Evenements</div></li>
+        <li><div class="dropdown-item filter" onclick="applyfilter('couple')">Couple</div></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><div id="restaure" class="dropdown-item filter" onclick="applyfilter('restaure')">Restaurer</div></li>
+    </ul>
+
+</div>
+
+</section>
+
+<!--========================-->
+<!--=======| GALLERY |======-->
+<!--========================-->
+<section class="gallery">
+
+    <div class="gallery-container">
+    
+        <div class="div-photo mariage"><img src="/uploads/marriage-1.jpg" class="photo mariage" alt=""></div>
+    
+        <div class="div-photo couple"><img src="/uploads/couple-1.jpg" class="photo couple" alt=""></div>
+    
+        <div class="div-photo bebe"><img src="/uploads/bebe-3.jpg" class="photo bebe" alt=""></div>
+    
+        <div class="div-photo grossesse"><img src="/uploads/enceinte-4.jpg" class="photo grossesse" alt=""></div>
+    
+        <div class="div-photo couple"><img src="/uploads/couple-2.jpg" class="photo couple" alt=""></div>
+    
+        <div class="div-photo bebe"><img src="/uploads/bebe-2.jpg" class="photo bebe" alt=""></div>
+    
+        <div class="div-photo famille"><img src="/uploads/famille-3.jpg" class="photo famille" alt=""></div>
+    
+        <div class="div-photo mariage"><img src="/uploads/marriage-4.jpg" class="photo mariage" alt=""></div>
+    
+    </div>
+
+</section>
+
+<section class="filter-bottom">
+
+    <div class="dropdown filters-dropdown">
+
+    <button class="btn btn-secondary dropdown-toggle filter-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Appliquez un filtre
+    </button>
+
+    <ul class="dropdown-menu filters-tab" aria-labelledby="dropdownMenuButton1">
+        <li><div class="dropdown-item filter" onclick="applyfilter('mariage')">Mariage</div></li>
+        <li><div class="dropdown-item filter" onclick="applyfilter('grossesse')">Grossesse</div></li>
+        <li><div class="dropdown-item filter" onclick="applyfilter('bebe')">Bébé</div></li>
+        <li><div class="dropdown-item filter" onclick="applyfilter('famille')">Famille</div></li>
+        <li><div class="dropdown-item filter" onclick="applyfilter('evenement')">Evenements</div></li>
+        <li><div class="dropdown-item filter" onclick="applyfilter('couple')">Couple</div></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><div id="restaure" class="dropdown-item filter" onclick="applyfilter('restaure')">Restaurer</div></li>
+    </ul>
+
+</div>
+
+</section>
+
+<!--========================-->
+<!--========| CONTACT |=====-->
+<!--========================-->
+
+<section class="contact">
+
+    <div class="contact-container">
+       <h4 class="contact-text">Vous avez une question ? <br>
+       Vous voulez reserver ? <br>
+       Savoir qui a fait ce site ?</h4> 
+       <a href="/contform/" alt="vers formulaire de contact"><div class="contact-btn">Contactez moi</div></a>
+    </div>
+    
+</section>
+<!--========================-->
+<!--========| FOOTER |======-->
+<!--========================-->
+
+<footer>
+    <div class="footer-social">
+        <!-- Pensez a mettre les lien sociaux -->
+        <img class="footer-social-logo" src="../assets/pics/fb-wte.png" alt="facebook">
+        <img class="footer-social-logo" src="../assets/pics/insta-wte.png" alt="instagram">
+    </div>
+    <h2 class="footer-title">Charles Cantin</h2>
+    <p class="footer-description">Photographe bien mais pas top</p>
+    <p class="footer-adress">CC Studio<br>20 rue Cenek Moua<br>99000 Saint-Necisste-Pas</p>
+    <p class="footer-tel">+33 6 14 18 39 45</p>
+
+    <p class="footer-copyright">&copy; 2022 CC Studios | Charle Cantin</p>  
+</footer>
+
+<!--========================-->
+<!--========| SCRIPTS |=====-->
+<!--========================-->
+
+<script src="/assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/script.js"></script>    
+</body>
+</html>
