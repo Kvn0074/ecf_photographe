@@ -110,6 +110,10 @@ width: auto;
      cursor: pointer;
  }
 
+ .filter {
+    cursor: pointer;
+ }
+
  .dropdown-menu.show {
     width: 80%;
     display: flex;
@@ -117,6 +121,5 @@ width: auto;
     justify-content: space-around;
     background-color: var(--light-dark);
     border: none;
-    cursor: pointer;
     opacity: 1;
  }
