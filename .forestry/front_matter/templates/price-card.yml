@@ -1,4 +1,32 @@
 ---
 label: price card
 hide_body: true
-fields: []
+fields:
+- name: card_picture
+  type: file
+  config:
+    maxSize: 64
+  label: card picture
+  description: image de la carte
+- name: card_title
+  type: text
+  config:
+    required: false
+  label: card title
+  description: le nom de la prestation
+- name: card-description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: card-description
+  description: description courte de la prestation 80char max
+- name: card_price
+  type: text
+  config:
+    required: false
+  label: card price
+  description: 'le prix au format : 100 € <br>Possibilité d''indiquer : sur demande'
