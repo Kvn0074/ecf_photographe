@@ -12,8 +12,8 @@ fields:
     - grossesse
     - bebe
     - famille
-    - bapteme
     - couple
+    - solo
     - evenement
     source:
       type: simple
