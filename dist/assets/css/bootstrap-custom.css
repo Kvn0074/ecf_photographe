@@ -107,6 +107,7 @@ width: auto;
      color: var(--kontrast);
      border: 1px solid var(--kontrast);
      border-radius: 15px;
+     cursor: pointer;
  }
 
  .dropdown-menu.show {
@@ -116,5 +117,6 @@ width: auto;
     justify-content: space-around;
     background-color: var(--light-dark);
     border: none;
+    cursor: pointer;
     opacity: 1;
  }
