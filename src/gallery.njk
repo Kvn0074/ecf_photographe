@@ -2,14 +2,65 @@
 layout: layout.njk
 pageTitle: Gallery
 ---
-<br><br><br><br><br><br>
-<h2>Gallery</h2>
-<br><br><br>
 
-<div class="gallery-container">
-{% for photo in collections.photos %}
-    <div class="for-ratio-img"><img src="{{photo.data.the_photo}}" class="photo {{photo.data.photo_categorie}}" alt=""></div>
-{% endfor %}
-</div>
+<!--========================-->
+<!--=======| HEADER |=======-->
+<!--========================-->
+
+<header class="header-prices">
+    <div class="container-fluid prices-title-container">
+        <div class="row prices-row">
+            <div class="col-md-6 prices-header-title">
+                <h2 class="prices-title">Mon porte-folio, l'endroit de votre révalation. vous êtes magnifique.</h2>
+            </div>
+            <div class="col-md-6 prices-texts">
+                <p class="prices-text"> chaque pression sur le declencheur de mon appareil vous revele au monde emprunt 
+                    d'une beautée et d'une pureté que vous ne soupçonniez pas. Vous êtes unique, magnifique et parfait, 
+                    et c'est mon role de vous le montrer. 
+                    <p>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--========================-->
+<!--=======| FILTRE |=======-->
+<!--========================-->
+
+<section class="filter">
+
+    <div class="dropdown filters-dropdown">
+
+        <button class="btn btn-secondary dropdown-toggle filter-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Appliquez un filtre
+        </button>
+
+        <ul class="dropdown-menu filters-tab" aria-labelledby="dropdownMenuButton1">
+            <li><div class="dropdown-item filter">Mariage</div></li>
+            <li><div class="dropdown-item filter">Grossesse</div></li>
+            <li><div class="dropdown-item filter">Bébé</div></li>
+            <li><div class="dropdown-item filter">Famille</div></li>
+            <li><div class="dropdown-item filter">Evenements</div></li>
+            <li><div class="dropdown-item filter">Couple</div></li>
+        </ul>
+
+    </div>
+
+
+</section>
+
+<!--========================-->
+<!--=======| GALLERY |======-->
+<!--========================-->
+<section class="gallery">
+
+    <div class="gallery-container">
+    {% for photo in collections.photos %}
+        <div class="for-ratio-img"><img src="{{photo.data.the_photo}}" class="photo {{photo.data.photo_categorie}}" alt=""></div>
+    {% endfor %}
+    </div>
+
+</section>
 
 {% include "contact-us.njk" %}

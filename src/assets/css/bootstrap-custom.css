@@ -1,11 +1,18 @@
+ /* ===================================================================== */ 
  /* ====================== BS NAVBAR CUSTOMISATION ====================== */
  /* ===================================================================== */
-
+ :root {
+    --light      : #dee2e6; /* idem --bs-gray-300 */
+    --dark       : #212529; /* idem --bs-gray-900 */
+    --light-dark : #ced4da; /* idem --bs-gray-400 */
+    --kontrast   : #20c997; /* idem --bs-teal */
+  
+}
  
 
 
 .navbar {
-    background-color: #dee2e6;
+    background-color: var(--light);
   }
 
 .navbar-toggler:focus {                       /* "burger" au click" */
@@ -22,10 +29,6 @@
     background-image: url(../pics/thinBurger.png); 
 }
 
-.navbar-light .navbar-brand {                 /* couleur titre site */
-    color: #111111;
-    ;
-}
 
 .navbar-logo {   /* logo navbar */
 height: 30px;
@@ -40,7 +43,7 @@ width: auto;
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-link:focus, 
 .navbar-light .navbar-nav .nav-link:hover {   /* couleurs menu */
-    color: #111111;
+    color: var(--dark);
 }
 
 .navbar-light .navbar-nav .nav-link.active, 
@@ -73,3 +76,42 @@ width: auto;
     padding-right: 10px;
 }
 
+ /* ===================================================================== */ 
+ /* ====================== BS DROPDOWN CUSTOMISATION ==================== */
+ /* ===================================================================== */
+
+ .filters-dropdown {
+     text-align: center;
+     margin-bottom: 25px;
+ }
+
+ .filter-button {
+     background: var(--dark);
+     color: var(--light);
+     width: 80%;
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+
+ .dropdown-toggle::after {
+     display: none;
+ }
+
+ .btn-secondary:hover {
+     background-color: var(--dark);
+     color: var(--kontrast);
+ }
+
+ .dropdown-menu.show {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--light-dark);
+    border: none;
+    opacity: 0.8;
+ }
+
+ .dropdown-item:focus {
+     background-color: var(--kontrast);
+ }
