@@ -16,8 +16,8 @@ fields:
     - Solo
     - Evenement
     source:
-      type: simple
-      section: 
+      type: documents
+      section: photos-603f0407-7481-4913-a920-7aac6a75a7e0
       file: 
       path: 
   label: Categorie de photo
