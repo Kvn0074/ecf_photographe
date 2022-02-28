@@ -34,7 +34,7 @@ a {
     padding: 0;
     width: 100%;
     overflow: hidden;
-    height: 100vh;
+    height: calc(100vh - 58px);
     background-image: url(../pics/girl-playing-flou.jpg);
     background-size: cover;
     text-align: center;
@@ -221,6 +221,17 @@ a {
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+}
+
+.hide {
+    opacity: 0;
+    transform: translateX(-90px);
+}
+
+.appear {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s;
 }
 
 /*=================================================

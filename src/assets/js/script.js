@@ -5,21 +5,9 @@
 /*=======================| Init Variable =*/
 
 let divs = document.getElementsByClassName("div-photo");
-let filter = document.getElementsByClassName("li-filter");
 let divTab = Array.from(divs);
-let filterTab = Array.from(filter);
 
 
-
-console.log("mon tableau :" + filterTab.className);
-console.log("mon tableau 2 :" + divTab);
-
-function addfilter (){
-    for (let a=0 ; a < filterTab.length ; a++){
-     console.log(filterTab[a].className)
-    }
-}
-addfilter();
 
 /*=======================| Add Function =*/
 
@@ -43,6 +31,31 @@ function applyfilter(category){
 }
 
 /*========================*/
+
+/*=======================| Add Function =*/
+const ratio = 0.5;
+const options = {
+    root: null,  /*= zone d'affichage =*/
+    rootMargin: '0px',
+    threshold: ratio /*= detection intersection si = 1, tout l'ellement doit etre visible =*/
+  }
+
+let hideDiv = document.querySelectorAll('.hide');
+
+function getInter (entries, observer){
+    entries.forEach(function (entry){
+        if(entry.intersectionRatio > ratio) {
+            entry.target.classList.add('appear');
+            observer.unobserve(entry.target);
+        } 
+    })
+    
+}
+  
+const observer = new IntersectionObserver(getInter, options);
+hideDiv.forEach(function (appear){
+    observer.observe(appear)
+})
 
 
 
