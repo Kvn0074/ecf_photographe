@@ -11,29 +11,30 @@ fields:
 - name: descritpion_image
   type: text
   config:
-    required: false
+    required: true
   label: descritpion image
   description: description simple et courte de l'image
 - name: card_title
   type: text
   config:
-    required: false
+    required: true
   label: card title
   description: le nom de la prestation
 - name: card_description
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: false
     schema:
       format: markdown
+    max: 90
   label: card description
-  description: description courte de la prestation 80char max
+  description: description courte de la prestation 90char max
 - name: card_price
   type: text
   config:
-    required: false
+    required: true
   label: card price
   description: 'le prix au format : 100 € <br>Possibilité d''indiquer : sur demande'
 pages:
