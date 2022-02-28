@@ -4,13 +4,9 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: src/category/**/*
-  label: categorie photo
-  match: "**/*"
 - type: directory
   path: src/priceCard
-  label: PriceCard
+  label: Prix prestations
   create: all
   match: "**/*"
   templates:
