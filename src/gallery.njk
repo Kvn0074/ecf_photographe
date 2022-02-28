@@ -41,7 +41,7 @@ pageTitle: Gallery
 
     <div class="gallery-container">
     {% for photo in collections.photos %}
-       <div class="div-photo {{photo.data.photo_categorie}}">
+       <div class="div-photo {{photo.data.photo_categorie}} normal">
            <a href="{{photo.data.the_photo}}" target="_self">
             <img src="{{photo.data.the_photo}}" class="photo {{photo.data.photo_categorie}}" alt="photo de {{photo.data.photo_categorie}}">
            </a>

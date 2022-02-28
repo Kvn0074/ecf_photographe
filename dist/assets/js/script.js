@@ -11,27 +11,49 @@
 
 let divs = document.getElementsByClassName("div-photo");
 let divTab = Array.from(divs);
+let count = 0;
 
     /*==========| functions =*/
 
+function reboot (counter){
+    divTab[counter].classList.replace ("zoom", "normal");
+    divTab[counter].classList.replace ("invisible", "normal");
+}
+function theDivs(counter, cat1, cat2){
+    divTab[counter].classList.replace(cat1, cat2);
+}
+
 function applyfilter(category){
+
+    count = 0;
+
     for (let i=0; i < divTab.length ; i++){
-        console.log(divTab[i].className);
+        reboot(i);
+
         if(category == 'restaure'){
-            divTab[i].style.display = 'block';
-            divTab[i].style.width = '45%';
+            count ++
+            reboot(i);
         } 
         else {
-            if (divTab[i].className != `div-photo ${category}`){
-            divTab[i].style.display = 'none';
+            if (! divTab[i].className.includes(category)){  
+                theDivs(i, "normal", "invisible");
+                theDivs(i, "zoom", "invisible");
             }
             else {
-                divTab[i].style.display = 'block';
-                divTab[i].style.width = '80%';
+                count ++;
+                console.log(divTab[i].className)
+                theDivs(i, "normal", "zoom");
             }
         }
     }
+    if (count < 1){
+        alert ("Désolé, je n'ai pas encore de photo de cette categorie");
+            for (let i=0; i < divTab.length ; i++){
+                reboot(i);
+            }
+    }
 }
+
 
 /*==========================================*/
 /*============| SCROLL DIV |================*/
