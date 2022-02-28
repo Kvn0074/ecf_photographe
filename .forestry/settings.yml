@@ -18,6 +18,7 @@ sections:
   match: "**/*"
   templates:
   - site-photo
+  - site-photo
 upload_dir: src/uploads
 public_path: "/uploads"
 front_matter_path: ''
