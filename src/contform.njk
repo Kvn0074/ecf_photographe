@@ -3,4 +3,40 @@ layout: layout.njk
 pageTitle: Contact
 ---
 
-<h2>Contact form</h2>
+<!--========================-->
+<!--========| FORMULAIRE |==-->
+<!--========================-->
+
+<section class="contact-section">
+    <div class="form-body">
+        <form class="form" action="">
+
+            <div class="form-name-div">
+                <div class="first-name">
+                    <input class="first-name-input" type="text" name="first-name" placeholder="Prenom" required >
+                </div>
+                <div class="last-name">
+                    <input class="last-name-input" type="text" name="last-name" placeholder="Nom" required >
+                </div>
+                <input class="email-input" type="email" name="email" placeholder="Adresse Mail" required />
+            </div>
+
+            <div class="selection-div">
+                <label class="selection-label" for="prestation">Choix de prestation</label><br>
+                <select class="selection-dropdown" name="prestation">
+                    {% for card in collections.cards %}
+                    <option class="selection-options" value="{{card.data.card_title}}">{{card.data.card_title}}</option>
+                    {% endfor %}
+                    <option class="selection-options" value="demande de devis">Demande de devis</option>
+                </select>
+            </div><br>
+    
+            <textarea class="com-input" placeholder="vos demandes ou commentaires"></textarea><br>
+            
+            <div class="button-center-div">
+            <button class="form-button" type="submit">Envoyer</button>
+            </div>
+
+        </form>
+    </div>
+</section>

@@ -6,6 +6,8 @@
     --dark       : #212529; /* idem --bs-gray-900 */
     --light-dark : #ced4da; /* idem --bs-gray-400 */
     --kontrast   : #20c997; /* idem --bs-teal */
+    --shadow     : 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   
 }
 
@@ -100,13 +102,13 @@ a {
 =============| PRICES CARDS |=====================
 =================================================*/
 
-.cards {
+.cards-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.cards .card-body {
+.cards-section .card-body {
     background: var(--light-dark);
     width: 300px;
     max-width: 300px;
@@ -115,22 +117,21 @@ a {
     border-radius: 5px;
     overflow: hidden;
     margin: 15px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: var(--shadow);
 }
 
-.cards .card-body
+.cards-section .card-body
 .card-description {
     padding: 10px;
     height: 150px;   
 }
 
-.cards .card-pic-div .card-pic {
+.cards-section .card-pic-div .card-pic {
     width: 100%;
     opacity: 0.75;
 }
 
-.cards .card-body 
+.cards-section .card-body 
 .card-price-div {
     text-align: right;
     height: 40px;
@@ -138,7 +139,7 @@ a {
     margin-top: 0;
 }
 
-.cards .card-body 
+.cards-section .card-body 
 .card-price-div 
 .card-price {
     background: var(--kontrast);
@@ -224,6 +225,65 @@ a {
     cursor: pointer;
 }
 
+/*=================================================
+=============| CONTACT FORM |======================
+=================================================*/
+
+.form-body {
+    background: var(--dark);
+    color: var(--kontrast);
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 400px;
+    box-shadow: var(--shadow);
+}
+
+.form input, .selection-dropdown {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background-color: var(--light-dark);
+    color: var(--dark);
+    margin: 10px;
+    border-radius: 2px;
+    border: none;
+    padding: 5px;
+}
+
+.selection-dropdown {
+    margin-bottom: 0;
+}
+
+.com-input {
+    background: var(--light-dark);
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 90px;
+    border: none;
+    border-radius: 2px;
+}
+
+.button-center-div {
+    text-align: center;
+}
+
+.form-button {
+    background: var(--kontrast);
+    color: var(--light);
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+    border: none;
+}
 /*=================================================
 =============| FOOTER |============================
 =================================================*/
