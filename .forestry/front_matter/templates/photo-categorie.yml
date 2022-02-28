@@ -1,4 +1,24 @@
 ---
 label: Photo Categorie
 hide_body: true
-fields: []
+fields:
+- name: categorie_de_photo
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - Mariage
+    - Grossesse
+    - Bébé
+    - Famille
+    - Couple
+    - Solo
+    - Evenement
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Categorie de photo
+  description: pour ajouter une nouvelle catégorie
