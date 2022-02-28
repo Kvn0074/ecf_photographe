@@ -4,10 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: categorie_photo
+- type: directory
+  path: ''
   label: categorie photo
-  match: "**/*"
+  create: all
+  match: src/categorie_photo**/*
 - type: directory
   path: src/priceCard
   label: PriceCard
