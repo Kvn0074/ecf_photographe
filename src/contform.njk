@@ -31,7 +31,7 @@ pageTitle: Contact
 
 <section class="contact-section">
     <div class="form-body">
-        <form class="form" action="">
+        <form class="form" name="contact" method="POST" data-netlify="true">
 
             <div class="form-name-div">
                 <div class="first-name">
@@ -45,7 +45,7 @@ pageTitle: Contact
 
             <div class="selection-div">
                 <label class="selection-label" for="prestation">Choix de prestation</label><br>
-                <select class="selection-dropdown" name="prestation">
+                <select class="selection-dropdown" name="prestation" id="prestation">
                     {% for card in collections.cards %}
                     <option class="selection-options" value="{{card.data.card_title}}">{{card.data.card_title}}</option>
                     {% endfor %}
