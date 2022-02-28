@@ -16,8 +16,8 @@ fields:
     - solo
     - evenement
     source:
-      type: simple
-      section: 
+      type: pages
+      section: categorie-photo-5a1b01ed-91aa-41e9-a185-250869edb8a6
       file: 
       path: 
   label: photo categorie
