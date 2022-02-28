@@ -1,31 +1,22 @@
  /* ===================================================================== */ 
  /* ====================== BS NAVBAR CUSTOMISATION ====================== */
  /* ===================================================================== */
- :root {
-    --light      : #dee2e6; /* idem --bs-gray-300 */
-    --dark       : #212529; /* idem --bs-gray-900 */
-    --light-dark : #ced4da; /* idem --bs-gray-400 */
-    --kontrast   : #20c997; /* idem --bs-teal */
-  
-}
- 
-
 
 .navbar {
     background-color: var(--light);
   }
 
-.navbar-toggler:focus {                       /* "burger" au click" */
+.navbar-toggler:focus {                     
     text-decoration: none;
     outline: 0;
     box-shadow: none;
 }
 
-.navbar-toggler {                             /* opacité div button */
+.navbar-toggler {                           
     border: 0px solid transparent;
 }
 
-.navbar-light .navbar-toggler-icon {          /* logo "burger" */
+.navbar-light .navbar-toggler-icon {         
     background-image: url(../pics/thinBurger.png); 
 }
 
@@ -77,7 +68,7 @@ width: auto;
 }
 
  /* ===================================================================== */ 
- /* ====================== BS DROPDOWN CUSTOMISATION ==================== */
+ /* ====================== FILTER DROPDOWN CUSTOMISATION ================ */
  /* ===================================================================== */
 
  .filters-dropdown {
