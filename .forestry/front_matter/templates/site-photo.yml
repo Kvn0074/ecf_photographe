@@ -17,9 +17,9 @@ fields:
     - evenement
     source:
       type: simple
-      section: categorie-photo-5a1b01ed-91aa-41e9-a185-250869edb8a6
+      section: ''
       file: 
-      path: 
+      path: ''
   label: photo categorie
 - name: the_photo
   type: file
