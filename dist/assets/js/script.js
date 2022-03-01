@@ -57,9 +57,11 @@ function applyfilter(category){
         alert ("Désolé, je n'ai pas encore de photo de cette categorie");
             for (let i=0; i < divTab.length ; i++){
                 reboot(i);
+              
             }
     }
 }
+
 
 
 /*========================================================= 2 =*/
@@ -96,7 +98,7 @@ function getInter (entries, observer){
 
     /*==========| Creation of IntersectionObserver  =*/
 
-    const observer = new IntersectionObserver(getInter, options);
+const observer = new IntersectionObserver(getInter, options);
 
     /*==========| Observation declaration for each '.hide' =*/
 
