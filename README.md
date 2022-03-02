@@ -1,35 +1,35 @@
 # Bienvenue sur votre site Web
 
-Avant de prendre possession de votre site je vous invites a lire se document.
+Avant de prendre possession de votre site je vous invite à lire ce document.
 
-Le site est heberger via Netlify, vous n'vez rien à faire, il est déjà en ligne est fonctionnel.
-son adresse est : https://ccantin-photo.netlify.app/
-Vous pouvez dés a present le partager a tout vos futur client.
+Le site est hébergé via Netlify, vous n'avez rien à faire, il est déjà en ligne et fonctionnel.
+Son adresse est : https://ccantin-photo.netlify.app/
+Vous pouvez dès à présent le partager avec tous vos futurs clients.
 
 ## Modification de contenue.
 
-Pour facilité votre intervention sur le site il faudra passer par le CMS forestry.io.
-Vous n'aurez qu'a vous connectez grace au mot de passe communiqué dans mon mail.
-le log in est votre adresse mail.
+Pour faciliter votre intervention sur le site, il faudra passer par le CMS forestry.io.
+Vous n'aurez qu'à vous connecter grâce au mot de passe communiqué dans mon mail.
+Le log-in est votre adresse mail.
 
-Une fois connecté, dans le bandeaux de gauche vous aurez 2 menus, Prix prestation, et photo.
+Une fois connecté, dans le bandeau de gauche vous aurez 2 menus : Prix prestations et Photos.
 
-__Prix Prestations__ vous permettrra de modifier les prix des prestation proposé ou alors d'ajouter une nouvelle 
-carte de prix a votre site ou encore d'en modifier totalement une existante.
+__Prix Prestations__ vous permettra de modifier le prix des prestations proposées, d'ajouter une nouvelle 
+carte de prix à votre site ou encore de modifier totalement une carte existante.
 
-__Photos__ c'est ici que vous pourrez ajouté des photos qui iront automatiquement sur le site.
+__Photos__ c'est ici que vous pourrez ajouter des photos qui iront automatiquement sur le site.
 
-Pour ajouter une nouvelle photos ou une nouvelle carte de prix, il suffit de cliquer sur 
-"Create New" selectionner photos ou prix prestation suivant ou vous vous trouvez, remplir les champs
+Pour ajouter une nouvelle photo ou une nouvelle carte de prix, il suffit de cliquer sur 
+"Create New", sélectionner photos ou prix prestations suivant où vous vous trouvez, remplir les champs
 et sauvegarder. 
 
-Nous nous verrons de toute manière pour que je vous explique tout dans les details mais vous verrez 
-c'est tres facile.
+Nous nous verrons de toute manière pour que je vous explique tout dans les détails mais vous verrez 
+c'est très facile.
 
-### /!\ ATTENTION A NE PAS TOUCHER AUX DEUX FICHIER EN .json /!\ ###
-C'est la seul contrainte. sinon tout est ok.
+### /!\ ATTENTION A NE PAS TOUCHER AUX DEUX FICHIERS EN .json /!\ ###
+C'est la seule consigne. 
 
-Si vous avez la moindre question vous savez ou me joindre je me ferait une joie de vous offir mon aide.
+Si vous avez la moindre question, n'hésitez pas à me joindre. Je me ferai une joie de vous offir mon aide.
 
-Kevin.
+Kevin
 
