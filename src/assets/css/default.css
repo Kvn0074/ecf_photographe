@@ -102,13 +102,12 @@ a:hover {
 
     /*______________ PRESENTATION */
 
-.presentation-container{
+.center {
     padding: 15px;
     text-align: center;
 }
 
-.presentation-title, 
-.presenation-text {
+.left {
     text-align: left;
 }
 

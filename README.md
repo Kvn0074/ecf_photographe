@@ -14,5 +14,22 @@ le log in est votre adresse mail.
 
 Une fois connecté, dans le bandeaux de gauche vous aurez 2 menus, Prix prestation, et photo.
 
-Prix Prestation vous permettrra de modifier les prix des prestation proposé ou alors d'ajouter une nouvelle 
+__Prix Prestations__ vous permettrra de modifier les prix des prestation proposé ou alors d'ajouter une nouvelle 
 carte de prix a votre site ou encore d'en modifier totalement une existante.
+
+__Photos__ c'est ici que vous pourrez ajouté des photos qui iront automatiquement sur le site.
+
+Pour ajouter une nouvelle photos ou une nouvelle carte de prix, il suffit de cliquer sur 
+"Create New" selectionner photos ou prix prestation suivant ou vous vous trouvez, remplir les champs
+et sauvegarder. 
+
+Nous nous verrons de toute manière pour que je vous explique tout dans les details mais vous verrez 
+c'est tres facile.
+
+### /!\ ATTENTION A NE PAS TOUCHER AUX DEUX FICHIER EN .json /!\ ###
+C'est la seul contrainte. sinon tout est ok.
+
+Si vous avez la moindre question vous savez ou me joindre je me ferait une joie de vous offir mon aide.
+
+Kevin.
+
